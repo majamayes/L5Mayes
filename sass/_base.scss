@@ -1,0 +1,21 @@
+@use 'mixins' as *;
+
+body {
+    margin: 0;
+}
+main {
+    margin: 10vw, 40vw;
+}
+.button {
+    @include button;
+}
+.button-alt {
+    @include button;
+    background-color: cadetblue;
+}
+.button-outline {
+    @include button;
+    background-color: transparent;
+    border: 1px solid;
+    color: unset;
+}
