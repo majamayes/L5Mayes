@@ -12,51 +12,39 @@
         <div class="text-box">
         Dogs are intelligent, emotional animals that experience the world through their senses and instincts. They think in simple yet meaningful ways, often focused on companionship, play, and trust. Their feelings are deep and genuine — they can sense joy, fear, love, and even sadness in both themselves and the people around them. Through their wagging tails, curious eyes, and loyal behavior, dogs show us that their thoughts and emotions are guided by affection, loyalty, and a desire to connect.</div>
 
-<div class="container">
-    <img src="images/Tulip.jpg" alt="Dog Picture">
-    <div class="text-box">
+<div class="gallery">
+    <div class="card">
+      <img src="images/Tulip.jpg" alt="Dog 1">
       <p>Tulip is curled up in a cozy ball, sleeping peacefully as the world moved quietly around it.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip2.jpg" alt="Dog Picture">
-    <div class="text-box">
+    <div class="card">
+      <img src="images/Tulip2.jpg" alt="Dog 2">
       <p>Tulip is dozed off in its soft, knitted sweater, looking warm and content as she dreams laying on the bed.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip3.jpg" alt="Dog Picture">
-    <div class="text-box">
+    <div class="card">
+      <img src="images/3" alt="Dog 3">
       <p>Tulip sat eagerly in her car seat, watching the world sped by.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip4.jpg" alt="Dog Picture">
-    <div class="text-box">
-      <p>Tulip sat quietly in her soft bed, eyes open and looking for a treat. </p>
+     <div class="card">
+      <img src="images/Tulip4.jpg" alt="Dog 2">
+      <p>Tulip sat quietly in her soft bed, eyes open and looking for a treat.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip5.jpg" alt="Dog Picture">
-    <div class="text-box">
+     <div class="card">
+      <img src="images/Tulip5.jpg" alt="Dog 2">
       <p>Tulip try getting on every dog furniture, sniffing curiously at every aisle as if carefully helping to choose what to buy.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip6.jpg" alt="Dog Picture">
-    <div class="text-box">
+     <div class="card">
+      <img src="images/Tulip6.jpg" alt="Dog 2">
       <p>Tulip posting for a treat and also for the camera, doing what she does best.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <img src="images/Tulip7.jpg" alt="Dog Picture">
-    <div class="text-box">
+     <div class="card">
+      <img src="images/Tulip7.jpg" alt="Dog 2">
       <p>Tulip sitting nice and pretty while balancing on a unpsidedown bowl.</p>
     </div>
   </div>
@@ -85,33 +73,38 @@ h1 {
       text-align: center; /* centers text inside */
       margin: 50px auto; /* centers box horizontally */
     }
-    .container {
-      display: flex;              /* puts image and text side by side */
-      align-items: center;        /* vertically centers them */
-      justify-content: center;    /* centers everything horizontally */
-      gap: 20px;                  /* space between image and text box */
-      padding: 20px;
+    .gallery {
+      display: flex;
+      justify-content: center;  /* centers all images horizontally */
+      gap: 20px;                /* space between each box */
+      flex-wrap: wrap;          /* allows wrapping on small screens */
+      margin-top: 40px;
     }
 
-    .container img {
-      width: 250px;               /* adjust as needed */
-      height: auto;
-      border-radius: 10px;        /* rounded corners */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .text-box {
-      border: 2px solid #333;
-      padding: 20px;
-      background-color: white;
+    .card {
+      text-align: center;       /* centers text under image */
+      border: 2px solid #ccc;
       border-radius: 10px;
-      max-width: 300px;           /* controls box width */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;             /* size of each image card */
     }
 
-    .text-box p {
-      margin-top: 0;
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card p {
+      margin-top: 10px;
       color: #333;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
     }
 </style>
 
