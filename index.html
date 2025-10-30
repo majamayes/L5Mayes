@@ -80,6 +80,35 @@ h1 {
       text-align: center; /* centers text inside */
       margin: 50px auto; /* centers box horizontally */
     }
+    .container {
+      display: flex;              /* puts image and text side by side */
+      align-items: center;        /* vertically centers them */
+      justify-content: center;    /* centers everything horizontally */
+      gap: 20px;                  /* space between image and text box */
+      padding: 20px;
+      background-color: #f4f4f4;  /* light background */
+    }
+
+    .container img {
+      width: 250px;               /* adjust as needed */
+      height: auto;
+      border-radius: 10px;        /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .text-box {
+      border: 2px solid #333;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      max-width: 300px;           /* controls box width */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .text-box h2 {
+      margin-top: 0;
+      color: #333;
+    }
 </style>
 
     </main>
